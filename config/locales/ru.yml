@@ -1,0 +1,7 @@
+ru:
+  activerecord:
+    attributes:
+      updated_at: Актуальность информации
+    errors:
+      messages:
+        present: Должно быть пустым

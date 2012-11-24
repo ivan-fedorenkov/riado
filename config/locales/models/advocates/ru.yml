@@ -1,0 +1,20 @@
+ru:
+  activerecord:
+    models:
+      advocate: Адвокат
+    attributes:
+      advocate:
+        second_name: Фамилия
+        first_name: Имя
+        patronomic: Отчество
+        reg_num: Реестровый номер
+        sex: Пол
+        status: Статус адвоката
+    errors:
+      models:
+        advocate:
+          attributes:
+            reg_num:
+              invalid: Реестровый номер должен быть в формате (X/Y), где X - номер региона, Y - уникальный номер в региональном реестре адвокатов
+            sex:
+              inclusion: Пол может быть либо "мужской", либо "женский"

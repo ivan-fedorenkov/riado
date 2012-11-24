@@ -1,0 +1,5 @@
+ru:
+  controllers:
+    advocatory_formations:
+      flash_messages:
+        advocatory_formation_not_found: Запрашиваемое адвокатское образование не найдено
