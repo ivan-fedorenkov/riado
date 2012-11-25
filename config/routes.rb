@@ -6,6 +6,7 @@ Riado::Application.routes.draw do
   
   resources :acols
   resources :advocatory_formations
+  resources :advocates
   
   root :to => 'application#index'
 end

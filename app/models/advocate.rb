@@ -4,7 +4,11 @@ class Advocate < ActiveRecord::Base
   belongs_to :advocatory_formation
   
   # Advocate statuses enum (Symbolize library)
-  symbolize :status, :in => [:active, :suspended, :stopped, :removed]
+  symbolize :status, :in => 
+    {:active => 'activerecord.attributes.advocate.statuses.active', 
+     :suspended => 'activerecord.attributes.advocate.statuses.suspended', 
+     :stopped => 'activerecord.attributes.advocate.statuses.stopped', 
+     :removed => 'activerecord.attributes.advocate.statuses.removed'}
   symbolize :sex, :in => [:male, :female, nil]
   
   validates :reg_num, :format => { :with => /\d+\/\d+/ }
@@ -14,6 +18,9 @@ class Advocate < ActiveRecord::Base
   validates :acol, :presence => true
  
   
+  def to_s
+    [second_name, first_name, patronomic].join(" ")
+  end
   
 private 
   

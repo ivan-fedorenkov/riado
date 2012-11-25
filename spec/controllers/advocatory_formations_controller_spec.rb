@@ -4,11 +4,15 @@ require 'spec_helper'
 
 describe AdvocatoryFormationsController do
 
-  let(:advocatory_formation) { FactoryGirl.create(:advocatory_formation) }
+  let(:advocatory_formation) do
+    advocatory_formation = double("Адвокатское образование")
+    advocatory_formation.stub(:id).and_return(id_double)
+    advocatory_formation
+  end
 
   describe "show" do
     it "Должен установить информацию об адвокатском образовании" do
-      AdvocatoryFormation.stub(:find).and_return(advocatory_formation)
+      AdvocatoryFormation.stub(:find).with(advocatory_formation.id.to_s).and_return(advocatory_formation)
       get 'show', :id => advocatory_formation.id
       assigns[:advocatory_formation].should eql(advocatory_formation)
     end

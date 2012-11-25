@@ -64,4 +64,12 @@ describe Advocate do
         
   end
   
+  describe "Методы" do
+    describe "#to_s" do
+      it "Должен возвращать ФИО адвоката" do
+        advocate.to_s.should eql([advocate.second_name,advocate.first_name,advocate.patronomic].join(" "))
+      end
+    end
+  end  
+  
 end

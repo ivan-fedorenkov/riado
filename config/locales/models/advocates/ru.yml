@@ -10,6 +10,11 @@ ru:
         reg_num: Реестровый номер
         sex: Пол
         status: Статус адвоката
+        statuses:
+          active: Активен
+          suspended: Приостановлен
+          stopped: Прекращен
+          removed: Удален из реестра
     errors:
       models:
         advocate:
