@@ -50,9 +50,12 @@ group :test do
   gem 'capybara'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
+  gem 'email_spec'
 end
 
 gem 'haml'
 gem "factory_girl_rails", "~> 4.0"
 gem 'faker'
 gem 'rails-i18n'
+gem 'devise'
+

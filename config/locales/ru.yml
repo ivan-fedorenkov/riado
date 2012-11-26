@@ -5,3 +5,7 @@ ru:
     errors:
       messages:
         present: Должно быть пустым
+  
+  errors:
+    messages:
+      not_saved: Ошибка при сохранении

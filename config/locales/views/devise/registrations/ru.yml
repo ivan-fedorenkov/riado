@@ -1,0 +1,6 @@
+ru:
+  devise:
+    registrations:
+      new:
+        sign_up: Регистрация
+        submit: Отправить

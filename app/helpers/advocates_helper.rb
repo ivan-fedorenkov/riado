@@ -2,20 +2,16 @@ module AdvocatesHelper
   
   def t_reg_num(advocate)
     
-    ("<strong>" +
-    t("activerecord.attributes.advocate.reg_num") +
-    ":</strong> " + 
-    advocate.reg_num).html_safe
+    strong_label_and_content_html_safe(
+      t("activerecord.attributes.advocate.reg_num"),
+      advocate.reg_num)
     
   end
   
   def t_status(advocate)
-    
-    ("<strong>" + 
-    t("activerecord.attributes.advocate.status") + 
-    ":</strong> " + 
-    t(Advocate.get_status_values[advocate.status])).html_safe
-    
+    strong_label_and_content_html_safe(
+      t("activerecord.attributes.advocate.status"),
+      t(Advocate.get_status_values[advocate.status]))
   end
   
 end

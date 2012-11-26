@@ -1,0 +1,10 @@
+ru:
+  devise:
+    shared:
+      links:
+        sign_in: Войти
+        sign_up: Зарегистрироваться
+        forgot_password: Забыли пароль?
+        confirmation_instructions_not_received: Не получили письма с инструкцией о подтверждении учетной записи?
+        unlock_instruction_not_received: Не получили письма с инструкцией о разблокировке учетной записи?
+        

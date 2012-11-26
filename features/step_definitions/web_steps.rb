@@ -9,5 +9,9 @@ end
 end
 
 То /^я должен видеть "(.*?)" в (.*?)$/ do |content, area|
-  find(WebSupport.selector(area)).should have_content(content)
+  selector = WebSupport.selector(area)
+  selector.should_not eql(nil), "Заданный селектор '#{area}' не найден. Добавьте его в support/web_support.rb!"
+  if selector
+    find(selector).should have_content(content)
+  end
 end

@@ -1,5 +1,7 @@
 Riado::Application.routes.draw do
 
+  devise_for :users
+
   resources :regions do
       get :set_current, :on => :member     
   end

@@ -8,7 +8,9 @@ class WebSupport
       return "#right"
     when "центральной части экрана"
       return "#center"
-    end
+    when "меню навигации"
+      return ".navbar"
+    end  
   end
 
 end

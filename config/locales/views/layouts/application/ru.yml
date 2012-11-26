@@ -1,0 +1,11 @@
+ru:
+  layouts:
+    application:
+      nav_main_page_link: Главная
+      
+      sign_in: Вход
+      sign_out: Выход
+      sign_up: Регистрация
+      
+      current_region_label: Текущий регион
+      choose_region_heading: Выбор региона
