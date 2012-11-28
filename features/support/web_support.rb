@@ -1,6 +1,6 @@
 #encoding: utf-8
 
-class WebSupport
+module WebSupport
 
   def WebSupport.selector(arg)
     case arg 
@@ -10,7 +10,11 @@ class WebSupport
       return "#center"
     when "меню навигации"
       return ".navbar"
+    when "нотификаций"
+      return "#notifications"
     end  
   end
 
 end
+
+World(WebSupport)

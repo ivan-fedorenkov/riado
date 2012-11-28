@@ -1,5 +1,5 @@
 #encoding: utf-8
 
-Допустим /^база данных заполнена начальными данными$/ do
-  load Rails.root + "db/seeds.rb"
+Допустим /^я нахожусь на главной странице$/ do
+  visit(root_path)
 end

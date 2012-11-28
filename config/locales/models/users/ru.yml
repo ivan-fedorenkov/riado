@@ -1,10 +1,11 @@
 ru:
   activerecord:
     models:
-      user: Пользователь
+      user: "Пользователь"
     attributes:
       user:
-        email: Email
-        password: Пароль
-        password_confirmation: Подтверждение
-        remember_me: Запомнить меня
+        email: "Email"
+        password: "Пароль"
+        password_confirmation: "Подтверждение"
+        remember_me: "Запомнить меня"
+        reset_password_token: "Ключ восстановления пароля"

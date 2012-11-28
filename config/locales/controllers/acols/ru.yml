@@ -2,4 +2,4 @@ ru:
   controllers:
     acols:
       flash_messages:
-        acol_not_found: Запрашиваемая адвокатская палата не найдена
+        acol_not_found: "Запрашиваемая адвокатская палата не найдена."

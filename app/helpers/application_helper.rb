@@ -1,3 +1,5 @@
+#encoding: utf-8
+
 module ApplicationHelper
   
   @@flash_classes =
@@ -8,6 +10,28 @@ module ApplicationHelper
     @@flash_classes[key]
   end
   
+  
+  def display_flash_messages(flash)
+    
+    flash_messages = ''
+    
+    flash.map do |key,message|
+      
+      # I want to translate my messages automatically, but devise gem use translate method itself,
+      # so i have to write this check
+      message = t(message) if (message.match(/^[a-zA-Z_\.]+$/)) 
+         
+      flash_messages +=
+        content_tag(:div, :class => ['alert', flash_class_for(key)]) do 
+          content_tag(:button, '×', :class => 'close', :type => 'button', :data => {:dismiss => 'alert'}) +
+          message
+        end
+        
+    end
+    
+    return flash_messages.html_safe
+  end
+  #
   
   def strong_label_and_content_html_safe(label, content)
     (content_tag(:strong, label + ": ") + content).html_safe

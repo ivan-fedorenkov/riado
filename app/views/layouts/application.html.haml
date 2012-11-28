@@ -26,11 +26,9 @@
                     %li= link_to t('.sign_up'), new_user_registration_path
     .container
       .row
-        .span12
-          - flash.map do |key,message|
-            %div{:class => ['alert',flash_class_for(key)]}
-              %button{:type => 'button', :class => 'close', :data => {:dismiss => 'alert'}} ×
-              = t(message)
+        #notifications.span12
+          = display_flash_messages(flash)
+          
       .row
         #center.span8= yield
         #right.span4

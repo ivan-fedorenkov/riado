@@ -1,5 +1,5 @@
 ru:
   controllers:
-    advocatory_formations:
+    advocates:
       flash_messages:
-        advocate_not_found: Запрашиваемый адвокат не найден
+        advocate_not_found: "Запрашиваемый адвокат не найден."

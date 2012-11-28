@@ -1,0 +1,14 @@
+= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
+  %legend= t('.forget_your_password')
+  = devise_error_messages!
+
+  .control-group
+    = f.label :email, :class => 'control-label'
+    .controls
+      = f.email_field :email
+
+  .control-group
+    .controls
+      = f.submit t('.send_me_password_instructions'), :class => ['btn','btn-primary']
+
+= render "devise/shared/links"

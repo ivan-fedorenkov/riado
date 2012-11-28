@@ -8,4 +8,4 @@ ru:
   
   errors:
     messages:
-      not_saved: Ошибка при сохранении
+      not_saved: Некоторые поля заполнены некорректно

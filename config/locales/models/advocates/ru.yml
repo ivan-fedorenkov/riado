@@ -1,25 +1,25 @@
 ru:
   activerecord:
     models:
-      advocate: Адвокат
+      advocate: "Адвокат"
     attributes:
       advocate:
-        second_name: Фамилия
-        first_name: Имя
-        patronomic: Отчество
-        reg_num: Реестровый номер
-        sex: Пол
-        status: Статус адвоката
+        second_name: "Фамилия"
+        first_name: "Имя"
+        patronomic: "Отчество"
+        reg_num: "Реестровый номер"
+        sex: "Пол"
+        status: "Статус адвоката"
         statuses:
-          active: Активен
-          suspended: Приостановлен
-          stopped: Прекращен
-          removed: Удален из реестра
+          active: "Активен"
+          suspended: "Приостановлен"
+          stopped: "Прекращен"
+          removed: "Удален из реестра"
     errors:
       models:
         advocate:
           attributes:
             reg_num:
-              invalid: Реестровый номер должен быть в формате (X/Y), где X - номер региона, Y - уникальный номер в региональном реестре адвокатов
+              invalid: "Реестровый номер должен быть в формате (X/Y), где X - номер региона, Y - уникальный номер в региональном реестре адвокатов."
             sex:
-              inclusion: Пол может быть либо "мужской", либо "женский"
+              inclusion: "Пол может быть либо 'мужской', либо 'женский'"
