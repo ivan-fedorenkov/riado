@@ -67,7 +67,7 @@ module Riado
     config.action_mailer.smtp_settings = {
       :address    => "mail.pulnet.ru"
     }
-    config.action_mailer.default_url_options = { :host => '192.168.56.102:3000' }
+    config.action_mailer.default_url_options = { :host => 'localhost:3000' }
     
   end
 end

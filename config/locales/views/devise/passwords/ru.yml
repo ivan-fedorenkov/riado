@@ -2,11 +2,11 @@ ru:
   devise:
     passwords:
       edit:
-        changing_password: Смена пароля
-        new_password: Новый пароль
-        new_password_confirmation: Подтверждение
-        change_password: Сменить пароль
+        changing_password: "Смена пароля"
+        new_password: "Новый пароль"
+        new_password_confirmation: "Подтверждение"
+        change_password: "Сменить пароль"
       new:
-        forget_your_password: Забыли пароль?
-        send_me_password_instructions: Отправить мне инструкции по смене пароля
+        forget_your_password: "Забыли пароль?"
+        send_me_password_instructions: "Отправить мне инструкции по смене пароля"
         
